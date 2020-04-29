@@ -122,10 +122,6 @@ public class GenerateDungeon : MonoBehaviour {
         objects.Add(Instantiate(mark, bossSpawn * scale, Quaternion.identity));
     }
 
-    private void FindRandomLeaf() {
-        
-    }
-
     private bool GenerateNewRoom() {
         int roomNumber = Random.Range(0, roomPositions.Count);
         Vector2 npos = roomPositions[roomNumber].Item1;
